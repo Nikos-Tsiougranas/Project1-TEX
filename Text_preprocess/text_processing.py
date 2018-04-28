@@ -24,12 +24,12 @@ def lemmatization(train_data):
     
 def lemstopwords():
     stopwords=list(ENGLISH_STOP_WORDS)
-    stopwords= [lmtzr.lemmatize(word) for word in stopwords]
     stopwords.extend(['will','never','make','one','say','says','many','much','said','enough','although','among','see','still','come','set','good','may'])
+    stopwords= [lmtzr.lemmatize(word) for word in stopwords]
     return stopwords
 
 def stemstopwords():
     stopwords=list(ENGLISH_STOP_WORDS)
-    stopwords= [ps.stem(word) for word in stopwords]
     stopwords.extend(['will','never','make','one','say','says','many','much','said','enough','although','among','see','still','come','set','good','may'])
+    stopwords= [ps.stem(word) for word in stopwords]
     return stopwords
