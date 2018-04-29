@@ -32,7 +32,6 @@ results = np.vstack((test_data['Id'], ypred)).T
 
 print results
 
-first = 0
 with open("testSet_categories.csv",'wb') as resultFile:
     wr = csv.writer(resultFile, delimiter='\t')
     header = np.vstack(("Id","Category")).T
